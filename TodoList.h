@@ -32,6 +32,8 @@ public:
     Q_INVOKABLE void remove(int id);
 
     Q_INVOKABLE QString get(int id);
+
+    QList<TodoItem> getList();
 };
 
 #endif // TODOLIST_H

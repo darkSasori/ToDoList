@@ -51,3 +51,7 @@ Q_INVOKABLE void TodoList::remove(int id){
 Q_INVOKABLE QString TodoList::get(int id){
     return m_lTodo[id].getDesc();
 }
+
+QList<TodoItem> TodoList::getList(){
+    return m_lTodo;
+}

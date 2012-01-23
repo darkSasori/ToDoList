@@ -237,6 +237,7 @@ Rectangle {
          border.color: "#f5eaea"
          border.width: 2
          radius: 2
+
          property int indexItem: -1
 
          Rectangle {
@@ -256,9 +257,6 @@ Rectangle {
                  Keys.onPressed: {
                      if( event.key == Qt.Key_Enter || event.key == 16777220 ){
                          listTodo.set(addItem.indexItem, txtItem.text);
-                         lista.model = null
-                         lista.model = listTodo
-                         lista.delegate = dListTodo
 
                          txtItem.text = "Description"
                          addItem.pos.x = -300
@@ -289,9 +287,6 @@ Rectangle {
                  anchors.fill: parent
                  onClicked: {
                      listTodo.set(addItem.indexItem, txtItem.text);
-                     lista.model = null
-                     lista.model = listTodo
-                     lista.delegate = dListTodo
 
                      txtItem.text = "Description"
                      addItem.pos.x = -300

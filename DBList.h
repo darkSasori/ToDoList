@@ -9,9 +9,10 @@ private:
     TodoList *m_List;
 
 protected:
-    void addItem(TodoItem *item);
+    void addItem(const TodoItem &item);
 
 public:
+    DBList();
     virtual ~DBList();
 
     virtual void load() = 0;
